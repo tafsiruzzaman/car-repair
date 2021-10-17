@@ -4,6 +4,7 @@ import AuthProvider from './contexts/AuthProvider';
 import Booking from './Pages/Booking/Booking/Booking';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
+import LoginRoute from './Pages/Login/LoginRoute/LoginRoute';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import NotFound from './Pages/NotFound/NotFound';
 import Header from './Pages/Shared/Header/Header';
@@ -25,9 +26,9 @@ function App() {
             <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>
             </PrivateRoute>
-            <Route path="/login">
+            <LoginRoute path="/login">
               <Login></Login>
-            </Route>
+            </LoginRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
